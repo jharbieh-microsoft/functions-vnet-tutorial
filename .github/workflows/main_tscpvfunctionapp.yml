@@ -11,7 +11,7 @@ on:
 
 env:
   AZURE_FUNCTIONAPP_PACKAGE_PATH: '.' # set this to the path to your web app project, defaults to the repository root
-  DOTNET_VERSION: '6.0.x' # set this to the dotnet version to use
+  DOTNET_VERSION: 'v4.0' # set this to the dotnet version to use
 
 jobs:
   build-and-deploy:
@@ -39,4 +39,4 @@ jobs:
           app-name: 'tscpvfunctionapp'
           slot-name: 'Production'
           package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B52938AF17E04BA480785C7E6F87C603 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1559C8AD5AA341C3935F6C0EE1ED7B82 }}
